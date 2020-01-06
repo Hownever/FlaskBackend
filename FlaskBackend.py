@@ -569,15 +569,14 @@ def test_ll():
     # import chardet
     # print("chardet.detect(payload)", chardet.detect(upload_files.read()))
     with open(r'demo.jpg', 'wb') as file:
-	data = upload_files.read()
-	file.write(data)
-        return '上传成功'
+       data = upload_files.read()
+       file.write(data)
+       return '上传成功'
 
 @app.route('/1Aa/A/:-_wfw', methods=['GET'])
 # @auth.login_required
 def test_ll2():
     return "AAA"
-
 
 
 if __name__ == '__main__':
